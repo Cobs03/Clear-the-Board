@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="title" id="title">
+        <div class="circle"><ion-icon name="extension-puzzle-outline"></ion-icon></div>
+        <div class="content">
+            <h1>Clear the Board</h1>
+            <p>Hover your mouse all around to find the boxes that are different from the rest. Click that box to clear the board.</p>
+        
+            <button type="button" onclick="move()">Proceed</button>
+
+        </div>
+        
+    </div>
+
+        <button type="button" onclick="move2()" class="button" id="tip">>></button>
+    
+    <div class="container">
+        <div class="box-row">
+            <div class="box" id="box-1"></div>
+            <div class="box" id="box-2"></div>
+            <div class="box" id="box-3"></div>
+            <div class="box" id="box-4"></div>
+            <div class="box" id="box-5"></div>
+            <div class="box" id="box-6"></div>
+            <div class="box" id="box-7"></div>
+            <div class="box" id="box-8"></div>
+            <div class="box" id="box-9"></div>
+            <div class="box" id="box-10"></div>
+            <div class="box" id="box-11"></div>
+            <div class="box" id="box-12"></div>
+            <div class="box" id="box-13"></div>
+            <div class="box" id="box-14"></div>
+            <div class="box" id="box-15"></div>
+            <div class="box" id="box-16"></div>
+        </div>
+
+        <div class="box-row">
+            <div class="box" id="box-17"></div>
+            <div class="box" id="box-18"></div>
+            <div class="box" id="box-19"></div>
+            <div class="box" id="box-20"></div>
+            <div class="box" id="box-21"></div>
+            <div class="box" id="box-22"></div>
+            <div class="box" id="box-23"></div>
+            <div class="box" id="box-24"></div>
+            <div class="box" id="box-25"></div>
+            <div class="box" id="box-26"></div>
+            <div class="box" id="box-27"></div>
+            <div class="box" id="box-28"></div>
+            <div class="box" id="box-29"></div>
+            <div class="box" id="box-30"></div>
+            <div class="box" id="box-31"></div>
+            <div class="box" id="box-32"></div>
+        </div>
+        
+        <div class="box-row">
+            <div class="box" id="box-33"></div>
+            <div class="box" id="box-34"></div>
+            <div class="box" id="box-35"></div>
+            <div class="box" id="box-36"></div>
+            <div class="box" id="box-37"></div>
+            <div class="box" id="box-38"></div>
+            <div class="box" id="box-39"></div>
+            <div class="box" id="box-40"></div>
+            <div class="box" id="box-41"></div>
+            <div class="box" id="box-42"></div>
+            <div class="box" id="box-43"></div>
+            <div class="box" id="box-44"></div>
+            <div class="box" id="box-45"></div>
+            <div class="box" id="box-46"></div>
+            <div class="box" id="box-47"></div>
+            <div class="box" id="box-48"></div>
+        </div>
+
+        <div class="box-row">
+            <div class="box" id="box-49"></div>
+            <div class="box" id="box-50"></div>
+            <div class="box" id="box-51"></div>
+            <div class="box" id="box-52"></div>
+            <div class="box" id="box-53"></div>
+            <div class="box" id="box-54"></div>
+            <div class="box" id="box-55"></div>
+            <div class="box" id="box-56"></div>
+            <div class="box" id="box-57"></div>
+            <div class="box" id="box-58"></div>
+            <div class="box" id="box-59"></div>
+            <div class="box" id="box-60"></div>
+            <div class="box" id="box-61"></div>
+            <div class="box" id="box-62"></div>
+            <div class="box" id="box-63"></div>
+            <div class="box" id="box-64"></div>
+        </div>
+
+        <div class="box-row">
+            <div class="box" id="box-65"></div>
+            <div class="box" id="box-66"></div>
+            <div class="box" id="box-67"></div>
+            <div class="box" id="box-68"></div>
+            <div class="box" id="box-69"></div>
+            <div class="box" id="box-70"></div>
+            <div class="box" id="box-71"></div>
+            <div class="box" id="box-72"></div>
+            <div class="box" id="box-73"></div>
+            <div class="box" id="box-74"></div>
+            <div class="box" id="box-75"></div>
+            <div class="box" id="box-76"></div>
+            <div class="box" id="box-77"></div>
+            <div class="box" id="box-78"></div>
+            <div class="box" id="box-79"></div>
+            <div class="box" id="box-80"></div>
+        </div>
+
+        <div class="box-row">
+            <div class="box" id="box-81"></div>
+            <div class="box" id="box-82"></div>
+            <div class="box" id="box-83"></div>
+            <div class="box" id="box-84"></div>
+            <div class="box" id="box-85"></div>
+            <div class="box" id="box-86"></div>
+            <div class="box" id="box-87"></div>
+            <div class="box" id="box-88"></div>
+            <div class="box" id="box-89"></div>
+            <div class="box" id="box-90"></div>
+            <div class="box" id="box-91"></div>
+            <div class="box" id="box-92"></div>
+            <div class="box" id="box-93"></div>
+            <div class="box" id="box-94"></div>
+            <div class="box" id="box-95"></div>
+            <div class="box" id="box-96"></div>
+        </div>
+
+        <div class="box-row">
+            <div class="box" id="box-97"></div>
+            <div class="box" id="box-98"></div>
+            <div class="box" id="box-99"></div>
+            <div class="box" id="box-100"></div>
+            <div class="box" id="box-101"></div>
+            <div class="box" id="box-102"></div>
+            <div class="box" id="box-103"></div>
+            <div class="box" id="box-104"></div>
+            <div class="box" id="box-105"></div>
+            <div class="box" id="box-106"></div>
+            <div class="box" id="box-107"></div>
+            <div class="box" id="box-108"></div>
+            <div class="box" id="box-109"></div>
+            <div class="box" id="box-110"></div>
+            <div class="box" id="box-111"></div>
+            <div class="box" id="box-112"></div>
+        </div>
+
+        <div class="box-row">
+            <div class="box" id="box-113"></div>
+            <div class="box" id="box-114"></div>
+            <div class="box" id="box-115"></div>
+            <div class="box" id="box-116"></div>
+            <div class="box" id="box-117"></div>
+            <div class="box" id="box-118"></div>
+            <div class="box" id="box-119"></div>
+            <div class="box" id="box-120"></div>
+            <div class="box" id="box-121"></div>
+            <div class="box" id="box-122"></div>
+            <div class="box" id="box-123"></div>
+            <div class="box" id="box-124"></div>
+            <div class="box" id="box-125"></div>
+            <div class="box" id="box-126"></div>
+            <div class="box" id="box-127"></div>
+            <div class="box" id="box-128"></div>
+        </div>
+    </div>
+
+    <div id="numbers"></div>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
